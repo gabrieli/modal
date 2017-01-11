@@ -81,15 +81,15 @@
 
     // Bind the `hide` method to the `click` event on the `elem`. Only hide
     // the modal if we had clicked directly on `elem` (ie. the overlay).
-    elem.addEventListener('click', function(e) {
-      e.target === elem && self.hide(elem);
-    });
+    // elem.addEventListener('click', function(e) {
+    //   e.target === elem && self.hide(elem);
+    // });
 
     // Bind the `hide` method to the `keydown` event. Only hide the modal if
     // we had pressed the <Esc> key.
-    document.addEventListener('keydown', function(e) {
-      e.keyCode === 27 && self.hide(e.target);
-    });
+    // document.addEventListener('keydown', function(e) {
+    //   e.keyCode === 27 && self.hide(e.target);
+    // });
 
     // Add inline styles to create the fade effect to `elem`, and bind the
     // the `onShowEnd` and `onHideEnd` callbacks to the `transitionEnd` event.
